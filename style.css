@@ -4,9 +4,5 @@
     width: 1600px;
     flex-wrap: wrap;
     justify-content: center;
-    
-}
 
-* {
-    border: solid 2px red;
 }
