@@ -1,10 +1,11 @@
 #grid-container {
     border: dotted 2px red;
     display: flex;
-    width: 1600px;
+    width: 800px;
     flex-wrap: wrap;
 }
 
 .container {
-    width: 400px;
+    width: 200px;
+    height: 100px;
 } 
