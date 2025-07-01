@@ -7,3 +7,7 @@ for (let step = 1; step < 17; step++) {
     container.addEventListener("mouseover", () => container.classList.add("hover"));
     gridContainer.appendChild(container);
 }
+
+let startButton = document.querySelector("#start-button");
+
+startButton.addEventListener("click", () => prompt("Please enter the number of squares (max 100)"));
