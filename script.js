@@ -7,7 +7,6 @@ startButton.addEventListener("click", () => {
     let squareWidth = 800/numberOfSquares;
     for (let step = 1; step <= totalNumberOfSquares; step++) {
         let container = document.createElement("div");
-        container.textContent = `I'm number ${step}`;
         container.classList.add("container");
         container.style.width = squareWidth+"px";
         container.style.height = squareWidth+"px";
