@@ -5,7 +5,6 @@
 }
 
 #grid-container {
-    border: dotted 2px red;
     display: flex;
     width: 800px;
     height: 800px;
