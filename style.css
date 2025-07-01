@@ -10,9 +10,3 @@
     height: 800px;
     flex-wrap: wrap;
 }
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

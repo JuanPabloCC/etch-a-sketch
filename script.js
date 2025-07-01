@@ -15,12 +15,14 @@ startButton.addEventListener("click", () => {
     let squareWidth = 800/numberOfSquares;
     for (let step = 1; step <= totalNumberOfSquares; step++) {
         let container = document.createElement("div");
-        container.classList.add("container");
+        gridContainer.appendChild(container);
         container.style.width = squareWidth+"px";
         container.style.height = squareWidth+"px";
         let color = rgbColor();
-        container.addEventListener("mouseover", () => container.style.backgroundColor = color);
-        gridContainer.appendChild(container);
+        container.addEventListener("mouseover", () => {
+            container.style.backgroundColor = color;
+        });
+        
     }
     gridContainer.setAttribute("style", "border: dotted 2px red");
 });
