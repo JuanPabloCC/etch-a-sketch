@@ -1,9 +1,29 @@
 let gridContainer = document.querySelector("#grid-container");
+let startButton = document.querySelector("#start-button");
 
-for (let step = 1; step < 17; step++) {
-    let container = document.createElement("div");
-    container.textContent = `I'm number ${step}`;
-    container.classList.add("container");
-    container.addEventListener("mouseover", () => container.classList.add("hover"));
-    gridContainer.appendChild(container);
+function rgbColor() {
+    let red = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    return `rgb(${red}, ${blue}, ${green})`
 }
+
+startButton.addEventListener("click", () => {
+    gridContainer.innerHTML = "";
+    let numberOfSquares = +prompt("Please enter the number of squares (1 - 100)");
+    let totalNumberOfSquares = numberOfSquares**2;
+    let squareWidth = 800/numberOfSquares;
+    for (let step = 1; step <= totalNumberOfSquares; step++) {
+        let container = document.createElement("div");
+        gridContainer.appendChild(container);
+        container.style.width = squareWidth+"px";
+        container.style.height = squareWidth+"px";
+        let color = rgbColor();
+        container.addEventListener("mouseover", () => {
+            container.style.backgroundColor = color;
+        });
+        
+    }
+    gridContainer.setAttribute("style", "border: dotted 2px red");
+});
+
