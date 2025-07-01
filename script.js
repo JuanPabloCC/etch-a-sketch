@@ -13,4 +13,5 @@ startButton.addEventListener("click", () => {
         container.addEventListener("mouseover", () => container.classList.add("hover"));
         gridContainer.appendChild(container);
     }
+    gridContainer.setAttribute("style", "border: dotted 2px red");
 });
