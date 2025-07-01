@@ -36,3 +36,7 @@ gridContainer.addEventListener("mouseup", () => {
     gridChilds.forEach(child =>child.removeEventListener("mousemove", changeColor));
 })
 
+document.getElementById("grid-container").addEventListener("dragstart", function(event) {
+    event.preventDefault();
+})
+
