@@ -2,6 +2,7 @@ let gridContainer = document.querySelector("#grid-container");
 let startButton = document.querySelector("#start-button");
 
 startButton.addEventListener("click", () => {
+    gridContainer.innerHTML = "";
     let numberOfSquares = +prompt("Please enter the number of squares (1 - 100)");
     let totalNumberOfSquares = numberOfSquares**2;
     let squareWidth = 800/numberOfSquares;
@@ -15,3 +16,4 @@ startButton.addEventListener("click", () => {
     }
     gridContainer.setAttribute("style", "border: dotted 2px red");
 });
+
